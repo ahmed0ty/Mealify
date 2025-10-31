@@ -1,0 +1,1132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container
+{
+    width: 90%;
+    margin: auto ;
+  
+}
+
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode .home-section   {
+  background-color: #121212;
+}
+body.dark-mode .gallery-section {
+  background-color: #121212;
+}
+
+
+body.dark-mode h2.Mealify,
+body.dark-mode li,
+body.dark-mode .big-p,
+body.dark-mode .small-p
+{
+  color: white !important;
+}
+body.dark-mode #bt-2
+{
+    background-color: #000 !important;
+}
+body.dark-mode .div1
+{
+    background-color: #000 !important;
+}
+body.dark-mode .div1 p
+{
+    color: white !important;
+}
+body.dark-mode .div2
+{
+    background-color: #000 !important;
+   
+}
+body.dark-mode .div2 p
+{
+    color: white !important;
+}
+body.dark-mode .div3
+{
+    background-color: #000 !important;
+   
+}
+body.dark-mode .div3 p
+{
+    color: white !important;
+}
+body.dark-mode .div4
+{
+    background-color: #000 !important;
+}
+body.dark-mode .div4 p
+{
+    color: white !important;
+}
+body.dark-mode .div4 span
+{
+    color: white !important;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+  color: #ffcc00;
+}
+
+
+.home-section {
+    background-color: #eee;
+    min-height: 100vh;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+  width: 100%;
+}
+.navbar .container h2 , .icons {
+
+    margin-inline: 30px;
+}
+
+.navbar .container h2 {
+  font-size: 30px;
+  color: #212529;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.navbar .container h2 span {
+  color: hsl(0, 84%, 44%);
+}
+
+
+.navbar .container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(65, 61, 61, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar .container ul li {
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+
+
+.navbar .container ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  border-bottom: 3px solid hsl(0, 84%, 44%);
+  width: 0;
+  transition: width 0.5s;
+}
+
+.navbar .container ul li:hover::before {
+  width: 50%;
+}
+
+
+#menuToggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  #menuToggle {
+    display: block;
+  }
+
+  .navbar .container ul {
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    border-top: 1px solid #ddd;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .navbar .container ul.active {
+    max-height: 400px; 
+  }
+
+  .navbar .container ul li {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+.icons i
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.home-section .text-and-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 120px;
+
+}
+
+.home-section .text-and-image .text .big-p {
+    font-size: 65px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 600;
+    color: #37373F;
+
+}
+
+.home-section .text-and-image .text .small-p {
+    line-height: 27px;
+    font-size: 19px;
+    padding-block: 15px;
+    color: #4F4F5A;
+    text-align: left;
+
+}
+
+.home-section .text-and-image .image {
+
+    width: 36%;
+
+}
+
+.home-section .text-and-image .image img {
+    width: 100%;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.home-section .text-and-image .image img:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px)rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px)rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px)rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px)rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px)rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px)rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px)rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px)rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px)rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px)rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px)rotate(-1deg);
+    }
+}
+
+.home-section .text-and-image .text .bt-1 {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-block: 12px;
+    margin-right: 60px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+    background-color: hsl(0, 84%, 44%);
+    color: white;
+    font-size: 15px;
+    border: 1px hsl(0, 84%, 44%) solid;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.home-section .text-and-image .text .bt-1:hover {
+    background-color: red;
+}
+
+.home-section .text-and-image .text #bt-2 {
+    padding-top: 23px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 90px;
+    border-left: hsl(0, 84%, 44%) 7.5px solid;
+    border-right: #eee 7.5px solid;
+    border-top: hsl(0, 84%, 44%) 7.5px solid;
+    border-bottom: #eee 7.5px solid;
+    background-color: white;
+    transform: rotate(-46deg);
+    cursor: pointer;
+}
+
+.home-section .text-and-image .text i {
+    position: relative;
+    right: 35px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.home-section .text-and-image .text label {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+ 
+}
+
+.home-section .text-and-image .text span {
+    transition: color 0.5s;
+}
+
+.text-and-image .text span:hover {
+    color: hsl(0, 84%, 44%);
+}
+
+
+@media screen and (max-width: 900px) {
+
+     
+    .navbar
+    {
+        margin: 0 !important;
+    }
+    .navbar , .bt-1 
+    {
+        width: 100%;
+        margin-block: 10px;
+       
+    }
+    .video label
+    {
+        padding-right: 65px;
+       
+    }
+    .video
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+
+    .icons 
+    {
+        display: flex;
+    
+    }
+    .fa-moon
+    {
+        padding-right: 20px;
+    }
+     .fa-sun
+    {
+        padding-right: 20px;
+    }
+
+    .home-section .text-and-image {
+        
+        flex-direction: column-reverse;
+        
+    }
+    .home-section .text-and-image .image {
+
+       margin-bottom:50px ;
+       width: 100%;
+    
+    }
+    body.dark-mode ul {
+  background-color: #121212 !important;
+}
+ 
+}
+
+/*****************************************************************************************************************************************************/
+.our-Proffesional-Chefs .images-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-Proffesional-Chefs .header {
+    text-align: center;
+    padding-block: 60px;
+}
+
+.our-Proffesional-Chefs .header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7f7f90;
+}
+
+.our-Proffesional-Chefs .header h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+.our-Proffesional-Chefs .header h2 span {
+    color: hsl(0, 84%, 44%);
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image,
+.second-image,
+.thirth-image {
+    width: 33.3333%;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+}
+svg
+{
+   bottom:160px;
+   position: absolute;
+}
+.our-Proffesional-Chefs .images-section2 .first-image:hover .side1,
+.second-image:hover .side2,
+.thirth-image:hover .side3 {
+    transform: translateX(0);
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image:hover,
+.second-image:hover,
+.thirth-image:hover {
+    transform: scale(105%);
+}
+
+.our-Proffesional-Chefs .images-section2 h3,
+p {
+    text-align: center;
+    padding-block: 8px;
+}
+
+.our-Proffesional-Chefs .images-section2 h3 {
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.our-Proffesional-Chefs .images-section2 p {
+
+    color: #7f7f90;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image .inside1 img,
+.second-image .inside2 img,
+.thirth-image .inside3 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image .side1,
+.second-image .side2,
+.thirth-image .side3 {
+    position: absolute;
+    right: 2%;
+    transform: translateX(150%);
+    top: 8%;
+    background-color: rgba(255, 255, 255, 0.311);
+    padding-inline: 15px;
+    padding-block: 20px;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image .side1 p i,
+.side2 p i,
+.side3 p i {
+    color: rgba(19, 2, 2, 0.23);
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.our-Proffesional-Chefs .images-section2 .first-image .side1 p i:hover,
+.side2 p i:hover,
+.side3 p i:hover {
+    color: #4F4F5A;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .images-section2
+    {
+        width: 100%;
+       flex-direction: column-reverse;
+       
+    }
+     .our-Proffesional-Chefs .images-section2 .first-image,
+    .second-image,
+    .thirth-image {
+        width: 100%;
+    } 
+    .our-Proffesional-Chefs .header
+    {
+        margin-top:200px;
+    }
+    .gallery-section
+    {
+        margin-top:200px;
+    }
+    .map-and-communication
+    {
+        padding-top: 200px;
+    }
+
+}
+@media screen and (900px < width < 1200px) {
+
+    .images-section2
+    {
+        width: 100%;
+        flex-wrap: wrap;
+  
+       
+    }
+     .our-Proffesional-Chefs .images-section2 .first-image,
+    .second-image,
+    .thirth-image {
+        width: 33.333%;
+    } 
+    svg
+    {
+        margin-bottom: 40px;
+    }
+}
+
+.gallery-photos
+{
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.gallery-section .header {
+    text-align: center;
+    padding-block: 60px;
+}
+.gallery-section {
+   background-color: #eee;
+   overflow: hidden;
+}
+
+.gallery-section .header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7f7f90;
+}
+
+.gallery-section .header h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+.gallery-section .header h2 span {
+    color: hsl(0, 84%, 44%);
+}
+
+.gallery-photos .image 
+{
+  width:calc(calc(100% - 40px) / 3) ;
+  position: relative;
+  overflow: hidden;
+  border: white 3px solid;
+  transition: all 0.5s;
+ 
+  
+}
+.gallery-photos .image:hover
+{
+    transform: scale(110%);
+}
+
+.gallery-photos .image img
+{
+    width:100% ;
+    transition: all 0.5s;
+    
+}
+.gallery-photos .image .layer
+{
+    width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    background-color: #00000096;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    transform: translateY(100%);
+  
+   
+}
+.gallery-photos .image .layer h2 , p
+{
+    position: relative;
+    top: 40%;
+    
+}
+.gallery-photos .image:hover .layer
+{
+   transform: translateY(0);
+  
+} 
+
+@media screen and (max-width: 900px) {
+
+    .gallery-photos
+    {
+        height: 2800px;
+        flex-direction: column;
+    }
+    .gallery-photos .image
+    {
+        flex-direction: column-reverse;
+       flex-wrap: wrap;
+        width: 100%;
+     
+    }
+
+    
+    
+}
+@media screen and (900px < width < 1200px) {
+
+    .gallery-photos
+    {
+        height: 2800px;
+      
+    }
+    .gallery-photos .image
+    {
+        width: 50%;
+    }
+
+    
+}
+/*****************************************************************************************************************************************************************/
+.map-and-communication {
+    margin-top: 50px;
+    
+  
+}
+
+.map-and-communication .header-map-and-communication {
+    text-align: center;
+
+}
+
+.map-and-communication .header-map-and-communication h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.map-and-communication .header-map-and-communication p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7f7f90;
+}
+
+.map-and-communication .header-map-and-communication span {
+    color: hsl(0, 84%, 44%);
+}
+
+.frame {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 40px;
+}
+
+.frame iframe {
+    width: 100%;
+}
+
+.map-and-communication .contact-us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+
+}
+
+.map-and-communication .contact-us .div1,
+.div2,
+.div3,
+.div4 {
+    width:calc(100% / 2 - 10px);
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 10px;
+  
+    
+    
+}
+.map-and-communication .contact-us .div1 i,
+.div2 i,
+.div3 i,
+.div4 i {
+    background-color: hsl(0, 84%, 44%);
+    color: white;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px;
+   
+}
+
+.map-and-communication .contact-us .div1 h2,
+.div2 h2,
+.div3 h2,
+.div4 h2 {
+    color: #7d7d7d;
+}
+
+.map-and-communication .contact-us .div1 p,
+.div2 p,
+.div3 p,
+.div4 p {
+    color: #212529;
+}
+
+.map-and-communication .contact-us .div1 div,
+.div2 div,
+.div3 div,
+.div4 div {
+    padding-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map-and-communication .contact-us .div4 div span {
+    color: black;
+    font-weight: 700;
+}
+ .inputs
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding-inline: 90px;
+  padding-top: 20px;
+  box-shadow: 0 0 1.875rem #00000014;
+  margin-block: 40px;
+}
+
+.inputs .object-input
+{
+    width: 100%;
+}
+.inputs .object-input input
+{
+    width: 100%;
+}
+.inputs input
+{
+   width:100%;
+   padding: 15px;
+   border:#eee 2px solid ;
+   
+
+}
+.textarea-input
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.textarea-input textarea
+{
+    width: 100%;
+  padding: 15px;
+  border:#eee 2px solid ;
+}
+
+
+.inputs .button-input
+{
+    padding-block:30px;
+}
+.inputs .button-input button
+{
+  padding-inline: 50px;
+  padding-block: 15px;
+  border-radius: 50px;
+  background-color: hsl(0, 84%, 44%);
+  border: hsl(0, 84%, 44%) 2px solid;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.inputs .button-input button:hover
+{
+ background-color:red;
+}
+@media screen and (max-width: 900px) {
+
+
+
+       .map-and-communication .frame {
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+    .map-and-communication .contact-us {
+
+        margin-bottom:50px ;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+     } 
+    .map-and-communication .contact-us .div1 , .div2 , .div3 , .div4 {
+
+      
+        width: 100%;
+     } 
+    .map-and-communication .inputs input , textarea {
+
+        
+        width: 100%;
+
+     } 
+     .inputs
+     {
+        padding-inline: 0;
+     }
+
+    
+ 
+}
+ @media screen and (900px < width < 1600px) {
+
+
+
+    .map-and-communication .frame {
+        width: 100%;
+ }
+  .map-and-communication .contact-us {
+
+     margin-bottom:50px ;
+     width: 100%;
+
+  }  
+
+ .map-and-communication .inputs input , textarea {
+
+     width: 100%;
+  } 
+} 
+
+
+
+
+
+.my-information {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+.my-information .first-div,
+.second-div,
+.third-div {
+    float: left;
+    margin-inline: 18px;
+    color: white;
+
+}
+
+.my-information .first-div {
+
+
+    margin-bottom: 100px;
+    padding-top: 30px;
+
+}
+.header-mealify
+{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.my-information .first-div span.meali {
+    font-size: 33px;
+    vertical-align: middle;
+    font-weight: 600;
+
+
+}
+
+.my-information .first-div span.dot {
+    color: hsl(0, 84%, 44%);
+    font-size: 50px;
+}
+
+.my-information .first-div img {
+   
+    border-radius: 120px;
+    vertical-align: middle;
+}
+
+.my-information .first-div p {
+    text-align: left;
+    font-size: 19px;
+
+}
+
+.my-information .first-div h3 {
+    text-align: center;
+    border-bottom: 2px slategrey solid;
+    padding-block: 12px;
+
+
+}
+
+.my-information .first-div i {
+    margin-left: 50px;
+    padding-top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.my-information .second-div p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.my-information .second-div input {
+    width: 78%;
+    padding-block: 10px;
+}
+
+.my-information .second-div button {
+    color: white;
+    background-color: hsl(0, 84%, 44%);
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-color: hsl(0, 84%, 44%);
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+
+
+}
+
+.my-information .second-div button:hover {
+
+    background-color: red;
+
+}
+
+.my-information .second-div h3 {
+    margin-top: 22px;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.my-information .second-div {
+
+
+   padding-top: 50px;
+   margin-bottom: 30px;
+
+   
+}
+.ul-one
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 50%;
+}
+.ul-two
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 50%;
+}
+.double-ul ul
+{
+    display: flex;
+    column-gap: 20px;
+}
+.my-information .second-div ul li:hover {
+    background-color: #4f4f5a71;
+    margin-left: 10px;
+}
+.my-information .second-div ul li {
+    padding-block: 5px;
+    transition: all 0.5s;
+}
+.my-information .third-div
+{
+    margin-bottom: 110px;
+}
+.my-information .third-div p,h3
+{
+    text-align: left;
+}
+.my-information .third-div i
+{
+    color: hsl(0, 84%, 44%);
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#Contact::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -100px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+
+    .my-information {
+
+        width: 100%;
+        flex-direction: column;
+        padding-inline: 10%;
+        
+
+ }
+
+
+
+
+
+ .my-information .first-div,
+.second-div,
+.third-div {
+
+    margin-bottom:50px ;
+    width: 100%;
+}
+
+
+
+
+
+
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px;
+  }
+  body.dark-mode::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
