@@ -15,11 +15,6 @@ html {
   
 }
 
-html,body
-{
-    overflow-x: hidden;
-}
-
 
 body {
   background-color: #ffffff;
@@ -371,11 +366,6 @@ body.dark-mode a {
 
 @media screen and (max-width: 900px) {
 
-      .gallery-section
-    {
-        padding-inline: 30px;
-    }
-
      
     .navbar
     {
@@ -432,7 +422,6 @@ body.dark-mode a {
 }
 
 /*****************************************************************************************************************************************************/
-
 .our-Proffesional-Chefs .images-section2 {
     display: flex;
     justify-content: center;
@@ -547,10 +536,6 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-    .our-Proffesional-Chefs
-{
-    padding-inline: 30px;
-}
 
     .images-section2
     {
@@ -596,7 +581,36 @@ p {
         margin-bottom: 40px;
     }
 }
+@media screen and (1114px < width < 1185px) {
 
+    
+    svg
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (1185px < width < 1200px) {
+
+    
+    svg
+    {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (1200px < width < 1300px) {
+
+    
+    svg
+    {
+        margin-bottom: 40px;
+    }
+      .svg-2
+    {
+        margin-bottom: 0px;
+    }
+}
 .gallery-photos
 {
     height: 1350px;
