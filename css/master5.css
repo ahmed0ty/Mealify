@@ -575,7 +575,7 @@ p {
 }
 .gallery-section .header h2 {
     
-    font-size: 30px;
+    font-size: 30px !important;
  
 
 }
@@ -597,10 +597,17 @@ p {
     } 
     svg
     {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 }
-
+.navbar .container ul.active {
+  position: absolute;
+  top: 100%; /* تبدأ مباشرة بعد الناف بار */
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .gallery-photos
 {
     height: 1350px;
