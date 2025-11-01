@@ -15,6 +15,11 @@ html {
   
 }
 
+html,body
+{
+    overflow-x: hidden;
+}
+
 
 body {
   background-color: #ffffff;
@@ -366,6 +371,11 @@ body.dark-mode a {
 
 @media screen and (max-width: 900px) {
 
+      .gallery-section
+    {
+        padding-inline: 30px;
+    }
+
      
     .navbar
     {
@@ -422,6 +432,7 @@ body.dark-mode a {
 }
 
 /*****************************************************************************************************************************************************/
+
 .our-Proffesional-Chefs .images-section2 {
     display: flex;
     justify-content: center;
@@ -536,6 +547,10 @@ p {
 }
 
 @media screen and (max-width: 900px) {
+    .our-Proffesional-Chefs
+{
+    padding-inline: 30px;
+}
 
     .images-section2
     {
