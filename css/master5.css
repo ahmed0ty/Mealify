@@ -8,9 +8,6 @@
 html {
   scroll-behavior: smooth;
 }
-html, body {
-  overflow-x: hidden;
-}
 .container
 {
     width: 90%;
@@ -23,7 +20,6 @@ body {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
-  
 }
 
 
@@ -432,7 +428,6 @@ body.dark-mode a {
     align-items: center;
 }
 
-
 .our-Proffesional-Chefs .header {
     text-align: center;
     padding-block: 60px;
@@ -445,7 +440,7 @@ body.dark-mode a {
 
 .our-Proffesional-Chefs .header h2 {
     font-family: "Amatic SC", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
 
 }
@@ -611,7 +606,7 @@ p {
 
 .gallery-section .header h2 {
     font-family: "Amatic SC", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
 
 }
