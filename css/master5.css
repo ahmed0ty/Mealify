@@ -568,10 +568,6 @@ p {
     .our-Proffesional-Chefs .header h2 {
     
     font-size: 30px;
-    
-
-   
-
 }
 .gallery-section .header h2 {
     
@@ -579,6 +575,11 @@ p {
  
 
 }
+
+  svg
+    {
+        margin-bottom: -2px;
+    }
 
 }
 @media screen and (900px < width < 1200px) {
@@ -597,7 +598,7 @@ p {
     } 
     svg
     {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 }
 .navbar .container ul.active {
