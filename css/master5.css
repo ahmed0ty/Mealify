@@ -580,6 +580,10 @@ p {
     {
         margin-bottom: -2px;
     }
+    .sarah
+    {
+        margin-bottom: 3px;
+    }
 
 }
 @media screen and (900px < width < 1200px) {
